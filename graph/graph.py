@@ -45,3 +45,16 @@ class Graph:
     
     def get_graph(self):
         return self.graph
+    
+    def get_vertices(self):
+        """Get the nodes."""
+        return self.vertices
+    
+    def get_weight(self, row: int, col: int) -> None:
+        """Gets the weight between two nodes.
+
+        Args:
+        row: int. The row number in adjacent matrix.
+        col: int. The col umber in adjacent matrix.
+        """
+        return (self.graph[row][col], self.graph[col][row])
